@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="public/assets/img/logo16.png" type="image/x-icon">
+  <title>D'accord | Chat Rooms</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="join-header">
+      <!-- <h1>Accord <img src="https://img.icons8.com/dusk/32/000000/chat.png"/></h1> -->
+      <!-- <h1>Accord <img src="https://img.icons8.com/dusk/64/000000/social-network.png"/></h1> -->
+      <h1><sub><img src="https://img.icons8.com/color/50/000000/connectdevelop.png"/></sub> D'accord</h1>
+      <!-- <h1><img src="https://img.icons8.com/nolan/64/share-2.png"/></h1> -->
+      <!-- <h1><img src="https://img.icons8.com/dusk/100/000000/social-network.png"/></h1> -->
+    </header>
+    <div class="join-container">
+      <main class="join-main">
+        <form action="chat.html">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" autocomplete="off" required>
+          </div>
+          <div class="form-control">
+            <label for="room">Room</label>
+            <select name="room" id="room">
+              <option hidden selected value> -- select a chatroom -- </option>
+              <option value="cupcake">Cupcake</option>
+              <option value="donut">Donut</option>
+              <option value="eclair">Eclair</option>
+              <option value="froyo">Froyo</option>
+              <option value="gingerbread">Gingerbread</option>
+              <option value="kitkat">Kit-Kat</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Join</button>
+        </form>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

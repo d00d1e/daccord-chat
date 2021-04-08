@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo16.png" type="image/x-icon">
+    <title>D'accord | Rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+<body>
+  <header class="chat-header">
+    <h1><sub><img src="https://img.icons8.com/color/35/000000/connectdevelop.png"/></sub> D'accord</h1>
+  </header>
+  <div class="chat-container">
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><sub><img src="https://img.icons8.com/dusk/25/000000/chat.png"/></sub> Room Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><sub><img src="https://img.icons8.com/color/25/000000/staff-skin-type-7.png"/></sub> Users</h3>
+        <ul id="users">
+          <!-- <li>Cherry</li>
+          <li>Boo</li>
+          <li>Chewy</li>
+          <li>Moose</li> -->
+        </ul>
+        <a href="index.html" class="btn">Leave Chat</a>
+      </div>
+      <div class="chat-messages">
+        <!-- <div class="message">
+          <p class="meta">Moose <span>2:15am</span></p>
+          <p class="text">I am hungry!</p>
+        </div>
+        <div class="message">
+          <p class="meta">Cherry <span>2:17am</span></p>
+          <p class="text">Me too. Let's wake mom.</p>
+        </div> -->
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input type="text" id="msg" autocomplete="off" required />
+        <button class="btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

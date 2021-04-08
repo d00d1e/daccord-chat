@@ -50,7 +50,6 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
-  border-radius: 0.2rem;
 }
 
 /*********
@@ -141,6 +140,7 @@ body {
   font-size: 1.1rem;
   background-color: var(--light-color-primary);
   color: #fff;
+  border-radius: 0.2rem;
   transition: background-color 0.2s;
 }
 
@@ -151,3 +151,124 @@ body {
 /*********
   CHAT ROOM
 **********/
+.chat-container {
+  max-width: 70rem;
+  background-color: #fff;
+  margin: 3rem auto;
+  overflow: hidden;
+  background-color: var(--dark-color-b);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.chat-header h1 {
+  background: -webkit-linear-gradient(#fff, #8e9296);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.chat-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+  position: relative;
+  background-color: var(--dark-color-b);
+  color: #fff;
+  padding: 2rem 2rem 6rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-color);
+}
+
+.chat-sidebar .btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 50%;
+  font-size: 1.1rem;
+  background-color: var(--light-color-primary);
+  border-radius: 0.2rem;
+  color: #fff;
+}
+
+.chat-sidebar .btn:hover {
+  background-color: #7189dac4;
+}
+
+.chat-sidebar h2 {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chat-sidebar h3 {
+  margin-bottom: 1.5rem;
+}
+
+.chat-sidebar ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.chat-messages {
+  padding: 3rem;
+  max-height: 33rem;
+  overflow-y: auto;
+}
+
+.chat-messages .message {
+  padding: 1rem;
+  margin-bottom: 1.1rem;
+  background-color: var(--dark-color-a);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.chat-messages .message .meta {
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 0.7rem;
+}
+
+.chat-messages .message .meta span {
+  font-size: 0.8rem;
+}
+
+.chat-form-container {
+  padding: 1.5rem 3rem;
+  background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.chat-form-container input[type="text"] {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  flex: 1;
+  outline: none;
+}
+
+.chat-form-container .btn {
+  height: 3rem;
+}

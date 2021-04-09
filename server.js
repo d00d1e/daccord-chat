@@ -16,17 +16,23 @@ const io = require("socket.io")(server);
 //set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-const botName = "DAccord Bot";
+const botName = "DAccord Bot 🤖";
 
-//Socket connection
+//SOCKET CONNECTION
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
 
     socket.join(user.room);
 
-    //welcome curret user
-    socket.emit("message", formatMessage(botName, "Welcome to D'Accord!"));
+    //welcome current user
+    socket.emit(
+      "message",
+      formatMessage(
+        botName,
+        `Welcome to D'Accord - you're having ${user.room} : ) Happy Chatting!`
+      )
+    );
 
     //broadcast when user connects
     socket.broadcast

@@ -9,41 +9,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/stars.css">
   </head>
 <body>
-  <header class="chat-header">
-    <h1><sub><img src="https://img.icons8.com/color/35/000000/connectdevelop.png"/></sub> D'accord</h1>
-  </header>
-  <div class="chat-container">
-    <main class="chat-main">
-      <div class="chat-sidebar">
-        <h3><sub><img src="https://img.icons8.com/dusk/25/000000/chat.png"/></sub> Room Name:</h3>
-        <h2 id="room-name"></h2>
-        <h3><sub><img src="https://img.icons8.com/color/25/000000/staff-skin-type-7.png"/></sub> Users</h3>
-        <ul id="users">
-          <!-- <li>Cherry</li>
-          <li>Boo</li>
-          <li>Chewy</li>
-          <li>Moose</li> -->
-        </ul>
-        <a href="index.html" class="btn">Leave Chat</a>
-      </div>
-      <div class="chat-messages">
-        <!-- <div class="message">
-          <p class="meta">Moose <span>2:15am</span></p>
-          <p class="text">I am hungry!</p>
+  <div class="container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <header class="chat-header">
+      <h1><sub><img src="https://img.icons8.com/color/35/000000/connectdevelop.png"/></sub> D'accord</h1>
+    </header>
+    <div class="chat-container">
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          <h3><sub><img src="https://img.icons8.com/dusk/25/000000/chat.png"/></sub> Room Name</h3>
+          <h2 id="room-name"></h2>
+          <h3><sub><img src="https://img.icons8.com/color/25/000000/staff-skin-type-7.png"/></sub> Users</h3>
+          <ul id="users">
+            <!-- <li>Cherry</li>
+            <li>Boo</li>
+            <li>Chewy</li>
+            <li>Moose</li> -->
+          </ul>
+          <a href="index.html" class="btn">Leave Chat</a>
         </div>
-        <div class="message">
-          <p class="meta">Cherry <span>2:17am</span></p>
-          <p class="text">Me too. Let's wake mom.</p>
-        </div> -->
-      </div>
-    </main>
-    <div class="chat-form-container">
-      <form id="chat-form">
-        <input type="text" id="msg" autocomplete="off" required />
-        <button class="btn">Send</button>
-      </form>
+        <div class="chat-window">
+          <div class="chat-messages">
+            <!-- <div class="message">
+              <p class="meta">Moose <span>2:15am</span></p>
+              <p class="text">I am hungry!</p>
+            </div>
+            <div class="message">
+              <p class="meta">Cherry <span>2:17am</span></p>
+              <p class="text">Me too. Let's wake mom.</p>
+            </div> -->
+          </div>
+          <div class="chat-form-container">
+            <form id="chat-form">
+              <input type="text" id="msg" autocomplete="off" required />
+              <button class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </main>
     </div>
   </div>
 
